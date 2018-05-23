@@ -1,4 +1,4 @@
-# Plot Image with Histogram 
+# Plot Image with Histogram in Gray Color
 def showImageHistogram_inRange_Gray(image, lower=0, upper=255): # Gray Value 0 and 255 will be Omitted
     print('working on showImageHistogram_inRange_Gray....................')
     hist = cv2.calcHist([image], channels=[0], mask=None, histSize=[256], ranges=[0,256]) 
