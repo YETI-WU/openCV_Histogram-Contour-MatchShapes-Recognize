@@ -1,4 +1,4 @@
-# openCV_ImageHistogram
+# openCV_Histogram-Contour-Template
 
 Read a Image from Figure or Video Capture  
 Turn into Gray Color Scale  
