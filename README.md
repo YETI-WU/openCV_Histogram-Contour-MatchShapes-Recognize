@@ -5,18 +5,18 @@
 Read a Image from Figure or Video Capture  
 Turn into Gray Color Scale  
 Plot the Histogram of Image  
-cv2.threshold
+Threshold to remove Background   
 Ommit 0 and 255 for Black and White Bacground  
 Store the major Color from Histogram Analysis:  
-  Select the Gray Color Index Range
+  Select the Gray Color Index Range  
   Select the Threshold of Minimum Intensity to render as Background  
   Store the Major Gray Color Index & Intensity for further Propose  
 Bilateral Filter : reduce noise & keep edges sharp  
 Canny Edge Detection 
 Find Contour: mode & method & hierachy 
-  mode
-  method
-  hierachy
+  mode  
+  method  
+  hierachy  
  cv2.findContours  
  cv2.arcLength  
  cv2.approxPolyDP  
