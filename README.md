@@ -4,9 +4,12 @@
 (still working on it. will be finished soon............................................)  
 Read a Image from Figure or Video Capture  
 Turn into Gray Color Scale  
+Threshold to remove Background 
+Ommit 0 and 255 for Black and White Bacground   
 Plot the Histogram of Image  
-Threshold to remove Background   
-Ommit 0 and 255 for Black and White Bacground  
+![](images/Histogram_01_Sphere.png)  
+  
+
 Store the major Color from Histogram Analysis:  
   Select the Gray Color Index Range  
   Select the Threshold of Minimum Intensity to render as Background  
