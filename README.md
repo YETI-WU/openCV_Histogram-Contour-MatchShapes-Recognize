@@ -28,8 +28,12 @@ cv2.calcHist
   Select the Gray Color Index Range  
   Select the Threshold of Minimum Intensity to render as Background  
   Store the Major Gray Color Index & Intensity for further Propose  
-### Bilateral Filter : reduce noise & keep edges sharp  
+### Bilateral Filter : reduce noise & keep edges sharp 
+cv2.bilateralFilter  
+  
 ### Canny Edge Detection 
+cv2.Canny(image, min_Val, max_Val)  
+
 ### Find Contour: mode & method & hierachy 
   mode  
   method  
