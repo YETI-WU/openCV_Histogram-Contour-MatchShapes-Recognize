@@ -2,11 +2,25 @@
 
 ##Pipeline (draft)
 (still working on it. will be finished soon............................................)  
-Read a Image from Figure or Video Capture  
-Turn into Gray Color Scale  
-Threshold to remove Background 
+### Read a Image from Figure or Video Capture  
+cv2.imread(filename, flag)  
+flag >0 Return a 3-channel color image.  
+flag =0 Return a grayscale image  
+flag <0 Return the loaded image as is (with alpha channel)  
+alternative:  
+    cv2.IMREAD_COLOR : Loads a color image. Any transparency of image will be neglected. It is the default flag.  
+    cv2.IMREAD_GRAYSCALE : Loads image in grayscale mode  
+    cv2.IMREAD_UNCHANGED : Loads image as such including alpha channel  
+
+
+### Turn into Gray Color Scale  
+cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  
+
+Threshold to remove Background  
 Ommit 0 and 255 for Black and White Bacground   
-Plot the Histogram of Image  
+
+### Plot the Histogram of Image  
+cv2.calcHist  
 ![](images/Histogram_01_Sphere.png)  
   
 
@@ -29,15 +43,15 @@ Plot the Histogram of Image
 
 Save un-Seen Contour to Template  
 ### Use Template to Recognize Item in next Image  
-  cv2.matchShapes  
+####  cv2.matchShapes  
     CONTOURS_MATCH_I1  
     CONTOURS_MATCH_I2  
     CV_CONTOURS_MATCH_I3  
-  cv2.matchTemplate  
+####  cv2.matchTemplate  
     square difference  
     cross correlation  
     correlated coefficient  
 ### Draw Rectangle and Put Text  
-  cv2.rectangle  
-  cv2.putText 
+####  cv2.rectangle  
+####  cv2.putText 
   
