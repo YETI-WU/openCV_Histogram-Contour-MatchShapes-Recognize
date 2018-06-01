@@ -10,13 +10,13 @@ Plot the Histogram of Image
 ![](images/Histogram_01_Sphere.png)  
   
 
-Store the major Color from Histogram Analysis:  
+### Store the major Color from Histogram Analysis:  
   Select the Gray Color Index Range  
   Select the Threshold of Minimum Intensity to render as Background  
   Store the Major Gray Color Index & Intensity for further Propose  
-Bilateral Filter : reduce noise & keep edges sharp  
-Canny Edge Detection 
-Find Contour: mode & method & hierachy 
+### Bilateral Filter : reduce noise & keep edges sharp  
+### Canny Edge Detection 
+### Find Contour: mode & method & hierachy 
   mode  
   method  
   hierachy  
@@ -28,7 +28,7 @@ Find Contour: mode & method & hierachy
  x,y,w,h = cv2.boundingRect(contour)  # read the contour position(x,y) and dimension( w & h)
 
 Save un-Seen Contour to Template  
-Use Template to Recognize Item in next Image  
+### Use Template to Recognize Item in next Image  
   cv2.matchShapes  
     CONTOURS_MATCH_I1  
     CONTOURS_MATCH_I2  
@@ -37,7 +37,7 @@ Use Template to Recognize Item in next Image
     square difference  
     cross correlation  
     correlated coefficient  
-Draw Rectangle and Put Text  
+### Draw Rectangle and Put Text  
   cv2.rectangle  
   cv2.putText 
   
