@@ -35,10 +35,18 @@ cv2.bilateralFilter
 cv2.Canny(image, min_Val, max_Val)  
 
 ### Find Contour: mode & method & hierachy 
-  mode  
-  method  
-  hierachy  
- cv2.findContours  
+#### cv2.findContours(image, mode, method, contours, hierarchy) 
+mode  
+CV_RETR_EXTERNAL -- retrieves only the extreme outer contours. It sets hierarchy[i][2]=hierarchy[i][3]=-1 for all the contours.
+CV_RETR_LIST -- retrieves all of the contours without establishing any hierarchical relationships.  
+CV_RETR_CCOMP -- retrieves all of the contours and organizes them into a two-level hierarchy. At the top level, there are external boundaries of the components. At the second level, there are boundaries of the holes. If there is another contour inside a hole of a connected component, it is still put at the top level.  
+CV_RETR_TREE -- retrieves all of the contours and reconstructs a full hierarchy of nested contours. This full hierarchy is built and shown in the OpenCV contours.c demo.  
+method  
+CV_CHAIN_APPROX_NONE -- stores absolutely all the contour points. That is, any 2 subsequent points (x1,y1) and (x2,y2) of the contour will be either horizontal, vertical or diagonal neighbors, that is, max(abs(x1-x2),abs(y2-y1))==1.  
+CV_CHAIN_APPROX_SIMPLE -- compresses horizontal, vertical, and diagonal segments and leaves only their end points. For example, an up-right rectangular contour is encoded with 4 points.  
+CV_CHAIN_APPROX_TC89_L1,CV_CHAIN_APPROX_TC89_KCOS -- applies one of the flavors of the Teh-Chin chain approximation algorithm. See [TehChin89] for details.  
+hierachy  
+   
  cv2.arcLength  # calculates a contour perimeter or a curve length  
  cv2.approxPolyDP  # approximates a polygonal curve(s) with the specified precision  
  area_contour = cv2.contourArea(contour)  # calculate the area of contour  
