@@ -47,8 +47,8 @@ CV_CHAIN_APPROX_SIMPLE -- compresses horizontal, vertical, and diagonal segments
 CV_CHAIN_APPROX_TC89_L1,CV_CHAIN_APPROX_TC89_KCOS -- applies one of the flavors of the Teh-Chin chain approximation algorithm. See [TehChin89] for details.  
 hierachy  
    
- cv2.arcLength  # calculates a contour perimeter or a curve length  
- cv2.approxPolyDP  # approximates a polygonal curve(s) with the specified precision  
+ #### cv2.arcLength  # calculates a contour perimeter or a curve length  
+ #### cv2.approxPolyDP  # approximates a polygonal curve(s) with the specified precision  
  area_contour = cv2.contourArea(contour)  # calculate the area of contour  
  0.0025 < area_contour/area_image < 0.80  # compare the area of contour vs whole image, remove < 5%^2 and >80%  
  x,y,w,h = cv2.boundingRect(contour)  # read the contour position(x,y) and dimension( w & h)
