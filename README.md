@@ -49,9 +49,13 @@ hierachy
    
  #### cv2.arcLength  # calculates a contour perimeter or a curve length  
  #### cv2.approxPolyDP  # approximates a polygonal curve(s) with the specified precision  
- area_contour = cv2.contourArea(contour)  # calculate the area of contour  
- 0.0025 < area_contour/area_image < 0.80  # compare the area of contour vs whole image, remove < 5%^2 and >80%  
- x,y,w,h = cv2.boundingRect(contour)  # read the contour position(x,y) and dimension( w & h)
+ #### area_contour = cv2.contourArea(contour)  # calculate the area of contour  
+ Calculate the AREA of contour, then compare with the AREA of whole image.  
+ If AREA of contour is less than (5%)^2, ignore it as background.  
+ If AREA of contour is larger than 80% of the whole image, ignore it as backgound.  
+ #### 0.0025 < area_contour/area_image < 0.80  # compare the area of contour vs whole image, remove < 5%^2 and >80%  
+ Read th econtour position(x,y) and dimension(w & h)  
+ x,y,w,h = cv2.boundingRect(contour)  
 
 Save un-Seen Contour to Template  
 ### Use Template to Recognize Item in next Image  
