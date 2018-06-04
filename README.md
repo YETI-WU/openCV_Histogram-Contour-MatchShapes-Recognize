@@ -22,6 +22,8 @@ Ommit 0 and 255 for Black and White Bacground
 ### Plot the Histogram of Image  
 cv2.calcHist  
 ![](images/Histogram_01_Sphere.png)  
+![](images/Histogram_stop_jpg.png) 
+![](images/Histogram_doNotEnter_jpg.png) 
   
 
 ### Store the major Color from Histogram Analysis:  
